@@ -6,11 +6,10 @@ int main(){
     std::vector<int> b;
     for(i = 0;i < 5; i+=1){
         std::cout<<a[i]<<std::endl;
+        b.push_back(a[i]);
         if(i%2==0){
-            b.push_back(a[i]);
             b.push_back(a[i]+1);
         }  else {
-            b.push_back(a[i]);
             b.push_back(a[i]);
         }
     }
